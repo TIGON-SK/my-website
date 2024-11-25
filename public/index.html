@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Martin Hanák</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="x" id="x" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+
+          <ul class="menu-items">
+            <li onclick="jumpToSection('about')">
+              <i class="fa fa-solid fa-user"></i>About
+            </li>
+            <li onclick="jumpToSection('education')">
+              <i class="fa fa-solid fa-graduation-cap"></i>Education
+            </li>
+            <li onclick="jumpToSection('skills')">
+              <i class="fa fa-solid fa-code bold"></i>Skills
+            </li>
+            <li onclick="jumpToSection('interests')">
+              <i class="fa fa-solid fa-heart"></i>Interests
+            </li>
+            <li onclick="jumpToSection('contact')">
+              <i class="fa fa-solid fa-phone"></i>Contact
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <section id="introduction" class="section">
+        <h1 id="intro-text"></h1>
+        <div id="img-of-me-wrapper">
+          <img id="img-of-me" src="../assets/img/me.png" alt="martin" />
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div id="right-about">
+          <h1 id="about-title">About me</h1>
+          <p id="text-about">
+            I specialize in web development and programming, focusing on
+            user-friendly sites and efficient backend systems. Ready to dive
+            into impactful projects and engage with the tech community!
+          </p>
+        </div>
+        <div id="img-about-wrapper">
+          <img id="img-about" src="../assets/img/coding.svg" alt="coding" />
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <h1 id="education-title">Education</h1>
+        <div class="school-info">
+          <a class="link-to-school" href="https://www.spse-po.sk/">
+            <img
+              class="institution-img"
+              src="../assets/img/spsepo.png"
+              alt="vut fit"
+          /></a>
+          <div class="left-education">
+            <h2 class="institution-name">SPŠE PO</h2>
+            <h3 class="field-of-study">Information and Network Technologies</h3>
+          </div>
+          <h3 class="year-of-study">2019 - 2023</h3>
+        </div>
+        <div class="school-info">
+          <a class="link-to-school" href="https://www.fit.vut.cz/.en">
+            <img
+              class="institution-img"
+              src="../assets/img/vutfit.png"
+              alt="spse po"
+          /></a>
+          <div class="left-education">
+            <h2 class="institution-name">Brno university of technology</h2>
+            <h3 class="field-of-study">Bachelor of IT</h3>
+          </div>
+          <h3 class="year-of-study">2023 - now</h3>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h1 id="skills-title">Skills</h1>
+        <div id="skills-wrapper">
+          <div class="skills-images">
+            <h2 class="skills-header-title">Languages I speak:</h2>
+            <div class="skill-item">
+              <p class="language-name">Python</p>
+              <img
+                class="skill-img"
+                src="../assets/img/python.svg"
+                alt="python"
+              />
+            </div>
+            <div class="skill-item">
+              <p class="language-name">Java</p>
+              <img class="skill-img" src="../assets/img/java.svg" alt="java" />
+            </div>
+            <div class="skill-item">
+              <p class="language-name">JavaScript</p>
+              <img class="skill-img" src="../assets/img/js.svg" alt="js" />
+            </div>
+
+            <div class="skill-item">
+              <p class="language-name">Dart</p>
+              <img
+                class="skill-img-special"
+                src="../assets/img/dart.svg"
+                alt="dart"
+              />
+            </div>
+          </div>
+
+          <div class="skills-images">
+            <h2 class="skills-header-title">I also know:</h2>
+            <div class="skill-item">
+              <p class="language-name">Html</p>
+              <img class="skill-img" src="../assets/img/html5.svg" alt="html" />
+            </div>
+            <div class="skill-item">
+              <p class="language-name">Css</p>
+              <img class="skill-img" src="../assets/img/css3.svg" alt="css" />
+            </div>
+
+            <div class="skill-item">
+              <p class="language-name">Sql</p>
+              <img class="skill-img" src="../assets/img/sql.svg" alt="sql" />
+            </div>
+          </div>
+        </div>
+        <img id="image-coding" src="../assets/img/coding2.svg" alt="coding" />
+      </section>
+
+      <section id="interests" class="section">
+        <h1 id="interests-title">Interests</h1>
+        <p id="text-interests">
+          I love coding, but I'm equally passionate about fitness, martial arts,
+          and traveling to new places. Skiing, trying new foods, and exploring
+          new cultures are some of my favorite things to do.
+        </p>
+        <img id="img-nature" src="../assets/img/traveling.jpg" alt="nature" />
+      </section>
+
+      <section id="contact" class="section">
+        <h1 id="contact-title">Contact</h1>
+        <form
+          class="form"
+          action="https://formsubmit.co/martinhanak004@gmail.com"
+          method="POST"
+        >
+          <div class="form-name-wrapper">
+            <input
+              type="text"
+              id="form-name"
+              name="name"
+              value=""
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="text"
+              id="form-subject"
+              name="subject"
+              value=""
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            id="form-email"
+            name="email"
+            value=""
+            placeholder="Your E-mail"
+            required
+          />
+          <textarea
+            name="message"
+            id="form-message"
+            placeholder="Your message"
+            required
+            rows="7"
+          ></textarea>
+          <div id="button-wrapper">
+            <input type="submit" id="form-submit" value="Submit" />
+          </div>
+        </form>
+        <img id="img-contact" src="../assets/img/contact.svg" alt="contact" />
+      </section>
+    </div>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
